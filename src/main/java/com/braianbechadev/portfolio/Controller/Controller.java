@@ -27,7 +27,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 
 @RestController  /*con esta anotation indicamos que esta es nuestra clase controladora que recibe las peticiones del cliente y las redirecciona cual pivot */
+//@CrossOrigin(origins="https://braianbechadev.web.app")
 @CrossOrigin(origins="*")
+//@CrossOrigin(origins="")
 
 
 public class Controller {

@@ -10,6 +10,7 @@ import java.util.List;
 //acá se declaran métodos que se implementarán en personaservice
 
 public interface IPersonaService {
+    
     public List<Persona> verPersonas();
     public void crearPersona (Persona per);
     public void borrarPersona (Long id);

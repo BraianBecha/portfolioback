@@ -49,7 +49,7 @@ public class Educacion implements Serializable {
     
     @ManyToOne()
     @JoinColumn(name = "person_id")    
-    private Persona personaedu;
+    private Educacion personaedu;
     
 
     public String getEscuela() {

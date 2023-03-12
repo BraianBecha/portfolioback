@@ -5,6 +5,7 @@
 package com.braianbechadev.portfolio.repository;
 
 import com.braianbechadev.portfolio.model.Educacion;
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -13,9 +14,9 @@ import org.springframework.stereotype.Repository;
  * @author braia
  */
 
-    @Repository
+  @Repository
     public interface EducacionRepository extends JpaRepository <Educacion, Long> {
-    
+  
 }
     
 

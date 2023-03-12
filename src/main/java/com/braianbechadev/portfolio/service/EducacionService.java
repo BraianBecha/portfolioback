@@ -13,32 +13,36 @@ import org.springframework.stereotype.Service;
 @Service
 public class EducacionService implements IEducacionService {
      
+    /**
+     *
+     */
     @Autowired                          
     public EducacionRepository eduRepo;
     
 /*implementar los metodos jpa que el repositorio nos otorga*/
     @Override
-    public List<Educacion> verEducacion() {
+    public List<Educacion> verEducacion(){
         return eduRepo.findAll();
     }
 
     @Override
-    public void crearEducacion(Educacion edu) {
+    public void crearEducacion(Educacion edu){
       eduRepo.save(edu);
     }
 
-    @Override
-    public void borrarEducacion(Long idEdu) {
+   @Override
+    public void borrarEducacion(Long idEdu){
         eduRepo.deleteById(idEdu);
     }
-
+    
     @Override
-    public Educacion buscarEducacion(Long idEdu) {
+    public Educacion buscarEducacion(Long idEdu){
        return eduRepo.findById(idEdu).orElse(null);
     }
-    @Override 
+    
+  @Override 
     public void editarEducacion(Educacion edu){
         eduRepo.save(edu);
     }
-    
+   
 }

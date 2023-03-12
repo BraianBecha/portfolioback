@@ -35,7 +35,6 @@ public class EducacionController {
        eduServ.crearEducacion(edu); 
        
     }
-   
     
     @GetMapping ("/ver/educacion")
     @ResponseBody //esta anotation le dice que lo que se devuelva en esta función sea en el cuerpo de la respuesta

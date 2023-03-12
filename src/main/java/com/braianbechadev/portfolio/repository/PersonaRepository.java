@@ -12,8 +12,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
     public interface PersonaRepository extends JpaRepository <Persona, Long> {
-
-    public List<Persona> findAllById(Long id);
-    
 }
+
  

@@ -47,7 +47,7 @@ public class ExperienciaController {
     }
     
     
-    @DeleteMapping("/delete/{idExp}")
+    @DeleteMapping("/delete/experiencia/{idExp}")
     public void borrarExperiencia(@PathVariable long idExp){
         expeServ.borrarExperiencia(idExp);
     }
